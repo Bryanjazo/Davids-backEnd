@@ -10,9 +10,10 @@
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
+.env
 !/log/.keep
 !/tmp/.keep
-
+.prettierrc
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
 !/tmp/pids/

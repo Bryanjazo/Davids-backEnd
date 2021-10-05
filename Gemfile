@@ -36,5 +36,18 @@ group :development do
   gem 'spring'
 end
 
+gem "httparty", "~> 0.18.1"
+
+gem "pry", "~> 0.14.1"
+
+gem "faraday", "~> 1.6"
+
+
+
+gem "dotenv", "~> 2.7"
+
+gem "nokogiri", "~> 1.12"
+
+gem "open-uri", "~> 0.1.0"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
