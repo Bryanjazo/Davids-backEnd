@@ -3,7 +3,14 @@ class Api::V1::CryptosController < ApplicationController
 
 
   def getCryptos 
-    Apicrypto.getCryptosModel
+    url = "https://newsdata.io/api/1/news?apikey=#{ENV['API_KEY']}&country=us&q=crypto"
+    
+    secondUrl = "http://newsdata.io/api/1/news?apikey=#{ENV['API_KEY']}&country=us&q=crypto&page=2"
+    response =  HTTParty.get(url)
+    secondResponse = HTTParty.get(secondUrl)
+    
+    render json: {first:response, second:secondResponse}
+    # render json: response
   end
   # GET /api/v1/cryptos
   def index

@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2021_10_05_054238) do
   enable_extension "plpgsql"
 
   create_table "api_v1_cryptos", force: :cascade do |t|
+    t.string "crypts"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

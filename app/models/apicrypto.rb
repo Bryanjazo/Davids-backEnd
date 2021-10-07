@@ -5,8 +5,7 @@ require 'open-uri'
 class Apicrypto < ApplicationRecord
 
 def self.getCryptosModel
-    url = "https://api.nomics.com/v1/currencies/ticker?key=#{ENV['API_KEY']}&ids=BTC,ETH,XRP&interval=1h&per-page=100&page=1"
-    binding.pry
+    url = "https://newsdata.io/api/1/news?apikey=#{ENV['API_KEY']}&country=us"
     crypto_array =  HTTParty.get(url)
 end
 
