@@ -58,6 +58,11 @@ ActiveRecord::Schema.define(version: 2021_10_15_213448) do
     t.string "blockchain_text"
     t.string "coming_soon"
     t.string "coming_soon_text"
+    t.string "header"
+    t.string "img_url"
+    t.string "catergoryByDate"
+    t.string "date"
+    t.text "blog_text"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

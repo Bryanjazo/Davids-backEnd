@@ -11,7 +11,11 @@ class CreateApiV1LearnCryptos < ActiveRecord::Migration[6.1]
       t.string :blockchain_text
       t.string :coming_soon
       t.string :coming_soon_text
-      
+      t.string :header 
+      t.string :img_url
+      t.string :catergoryByDate
+      t.string :date 
+      t.text :blog_text
 
       t.timestamps
     end
