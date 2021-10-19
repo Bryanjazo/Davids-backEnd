@@ -12,6 +12,7 @@ class CreateApiV1Blockchains < ActiveRecord::Migration[6.1]
       t.string :linkedIn_url
       t.string :telegram_url
       t.string :whatsApp_url
+      
       t.timestamps
     end
   end
